@@ -1,0 +1,77 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер чата */
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background: #2c2c3e;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* Шапка */
+.chat-header {
+    padding: 15px;
+    background: #3a3a55;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+}
+
+/* Поле ввода */
+.chat-input-form {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #2c2c3e;
+    padding: 10px;
+    border-top: 2px solid #444;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: #444;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.chat-input:focus {
+    background: #555;
+}
+
+/* Кнопка отправки */
+.send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-button:hover {
+    background: #5848e5;
+}
