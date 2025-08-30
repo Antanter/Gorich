@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grinder</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+
 </head>
 <body>
-
-    <div class="chat-container">
-        <div class="chat-header">
-        <form class="chat-input-form">
-            <input type="text" class="chat-input" placeholder="Введите сообщение...">
-            <button type="submit" class="send-button">Отправить</button>
-        </form>
+    <div class="container">
+        <div class="sidebar">
+            <div class="chat-list">
+                <div class="chat-item">
+                    <h3>John Doe</h3>
+                    <p>Hey, how's it going?</p>
+                </div>
+                <div class="chat-item">
+                    <h3>Jane Smith</h3>
+                    <p>Meeting at 3 PM?</p>
+                </div>
+                <div class="chat-item">
+                    <h3>Group Chat</h3>
+                    <p>Planning the project...</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2>John Doe</h2>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Hey, how's it going?</p>
+                    <div class="time">10:30 AM</div>
+                </div>
+                <div class="message sent">
+                    <p>Pretty good! How about you?</p>
+                    <div class="time">10:32 AM</div>
+                </div>
+                <div class="message received">
+                    <p>Working on a new project. It's intense!</p>
+                    <div class="time">10:35 AM</div>
+                </div>
+                <div class="message sent">
+                    <p>That sounds exciting! Tell me more.</p>
+                    <div class="time">10:36 AM</div>
+                </div>
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Type a message...">
+                <button>Send</button>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

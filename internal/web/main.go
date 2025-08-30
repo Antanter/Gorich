@@ -22,6 +22,11 @@ func main() {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", indexHandler)
+
+	fileServer := http.FileServer(http.Dir("assets/"))
+	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+
+	fmt.Println("Server started on port " + port)
 	err := http.ListenAndServe(":"+port, mux)
 	if err != nil {
 		fmt.Println(err)
